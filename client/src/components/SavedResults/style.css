@@ -1,0 +1,11 @@
+p, h5, a {
+    margin: 0 10px 8px;
+}
+
+.remove-book-btn {
+    background-color: #ff5b5f;
+}
+
+.remove-book-btn:hover {
+    background-color: red;
+}

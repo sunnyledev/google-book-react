@@ -1,28 +1,30 @@
 import React from "react";
 import "./style.css";
-import image from "./placeholder.jpg";
 
 const SearchResults = (props) => {
     return(
         <div class="search-result-outer">
             <div className="container">
-                {/* placeholder is just an example of displaying the image so it would be ---> src={props.image}*/}
-                <img id="image" src={image} alt={props.title}/>
+                <img id="image" src={props.image} alt={props.title}/>
                 <div className="book-info">
-                    <h5>Title:
+                    <div className="outer-div">
+                        <h5>Title:</h5>
                         <h5>{props.title}</h5>
-                    </h5>
-                    <p>Author:
+                    </div>
+                    <div className="outer-div">
+                        <p>Author:</p>
                         <p>{props.author}</p>
-                    </p>
-                    <p>Description:
+                    </div>
+                    <div className="outer-div">
+                        <p>Description:</p>
                         <p>{props.description}</p>
-                    </p>
-                    <p>Link:
+                    </div>
+                    <div className="outer-div">
+                        <p>Link:</p>
                         <a href={props.link}>{props.title}</a>
-                    </p>
+                    </div>
                 </div>
-                <button className="save-book-button" {...props}>
+                <button className="save-book-button shared-btn-attr" {...props}>
                     Save Book
                 </button>
             </div>
