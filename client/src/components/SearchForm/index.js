@@ -1,12 +1,13 @@
 import React from "react";
+import './style.css';
 
 const SearchForm = (props) => {
     return(
-        <div className="jumbotron" style={{ height: 100, clear: "both", paddingTop:0, textAlign: "center", paddingLeft:"24%"}}>
-            <h3 style={{ textAlign: "left", paddingTop: 5, marginTop: "-30px" }}>Search for a Book:</h3>
-            <div className="form-group" style={{ paddingTop: 0, width: "80%", display: "flex", height: 50 }}>
+        <div className="search-form-outer">
+            <p className="search-label">Search for a Book:</p>
+            <div className="form-group">
                 <input className="form-control" {...props} />
-                <button {...props} style={{ float: "right", height: "100%", marginLeft:15, fontSize:"2em", textAlign:"center", padding:"0 16px" }} className="btn btn-success">
+                <button {...props} className="search-btn">
                     Search
                 </button>
             </div>
