@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    justify-content: stretch;
+    flex-flow: row wrap;
+    padding: 30px;
+    max-width: 95%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    border-radius: 15px;
+}
+
+#image {
+    width: 200px;
+    height: 200px;
+}
+
+.book-info {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5px 25px 0;
+    flex-grow: 2;
+}
+
+.save-book-button {
+    height: 40px;
+    background-color: #cbc4fa;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.2s;
+    align-self: center;
+}
+
+.save-book-button:hover {
+    background-color: #b8adfa;
+}
+
+p, h5, a {
+    margin: 0 10px 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 450px) {
+    .book-info { margin: 10px 0; }
+}

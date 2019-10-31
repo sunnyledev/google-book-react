@@ -5,23 +5,17 @@
     padding: 20px 30px 30px;
 }
 
-.search-label {
-    font-size: 1.2em;
-}
-
 .form-group {
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
-    height: 40px;
 }
 
-.form-control {
-    min-width: 200px;
-    max-width: 50%;
+.book-name-input {
+    min-width: 50%;
+    max-width: 90%;
     padding: 5px 10px;
-    border-width: 0;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 .search-btn {
@@ -29,10 +23,15 @@
     font-size: 1.1em;
     background-color: #cbc4fa;
     border-radius: 5px;
-    border-width: 0;
     padding: 0 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     transition: all 0.2s;
+}
+
+.shared-attrs {
+    height: 40px;
+    margin: 15px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-width: 0;
 }
 
 .search-btn:hover {
