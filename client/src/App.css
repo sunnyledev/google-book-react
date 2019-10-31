@@ -1,0 +1,4 @@
+.outer-layer {
+    display: flex;
+    flex-flow: column wrap;
+}

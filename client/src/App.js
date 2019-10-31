@@ -5,11 +5,12 @@ import Saved from "./pages/Saved";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Jumbotron from "./components/Jumbotron";
+import './App.css';
 
 function App() {
   return (
     <Router>
-      <div>
+      <div className="outer-layer">
         <NavBar />
         <Jumbotron>
           <h1>(React) Google Books Search</h1>
