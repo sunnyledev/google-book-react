@@ -3,7 +3,7 @@ import "./style.css";
 
 const SearchResults = (props) => {
     return(
-        <div class="search-result-outer">
+        <div className="search-result-outer">
             <div className="container">
                 <img id="image" src={props.image} alt={props.title}/>
                 <div className="book-info">

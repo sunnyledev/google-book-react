@@ -25,8 +25,8 @@ const SavedResults = (props) => {
                         <a href={props.link}>{props.title}</a>
                     </div>
                 </div>
-                <button {...props} className="remove-book-btn shared-btn-attr">
-                    Remove Book
+                <button {...props} className="remove-book-btn" aria-label="Button to remove book from saved collections" title="Remove book">
+                    <img id="remove-image" src={remove} alt="Remove book"/>
                 </button>
             </div>
         </div>
